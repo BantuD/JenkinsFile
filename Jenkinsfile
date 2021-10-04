@@ -13,7 +13,7 @@ pipeline{
             }
         stage('Clean goad')
         {
-            steps { bat 'mvn clean'}
+            steps { mvn clean}
         }
         stage('Stage 4'){
           steps{

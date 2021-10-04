@@ -13,7 +13,7 @@ pipeline{
             }
         stage('Clean goad')
         {
-            steps { mvn clean}
+            steps { bat 'echo Bantu' }
         }
         stage('Stage 4'){
           steps{
@@ -21,8 +21,5 @@ pipeline{
           }         
       }
     }
-    environment 
-    {
-            PATH = "C:\\WINDOWS\\SYSTEM32"
-    }
+    
 }
